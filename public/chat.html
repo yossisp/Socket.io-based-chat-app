@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.io Chat App</title>
+    <link rel="stylesheet" href="./css/bootstrap4.1.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<div class="container">
+    <div id="conversation" class="row">
+        <div class="col-md-6 offset-md-3 card">
+            <a href="./index.html">Change Settings</a>
+            <h1 class="room-title text-center"></h1>
+            <div class="chatArea">
+                <ul class="messages list-group">
+                    <!-- Messages end up here! -->
+                </ul>
+            </div>
+            <form id="message-form">
+                <div class="form-group">
+                    <input type="text" name="message" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" id="chatSubmit"/>
+                    <button type="button" id="showUsersButton" class="btn btn-info">Show room users</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/socket.io-1.3.7.js"></script>
+<script type="module" src="js/app.js"></script>
+<script src="js/moment-2.22.1.js"></script>
+<script type="module" src="js/queryParams.js"></script>
+</body>
+</html>
